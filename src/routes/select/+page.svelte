@@ -4,22 +4,27 @@
 	import SelectTypePlugin from '@revolist/revogrid-column-select';
 
 	defineCustomElements();
-
 	const columns = [
 		{
 			prop: 'name',
-			labelKey: 'label',
-			valueKey: 'value',
-			source: [
-				{ label: 'According', value: 'a' },
-				{ label: 'Over', value: 'b' },
-				{ label: 'Source', value: 's' }
-			],
-			columnType: 'select' // column type specified as 'select'
+			name: 'First',
+			size: 150,
+			columnType: 'select',
+			source: ['According', 'Source']
+		},
+		{
+			prop: 'details',
+			name: 'Second column',
+			size: 200
 		}
 	];
-	const source = [{ name: 'New item' }, { name: 'New item 2' }];
-
+	// rows collection
+	const source = [
+		{
+			name: 'Source',
+			details: 'Item description'
+		}
+	];
 	// register column type
 	const columnTypes = { select: new SelectTypePlugin() };
 </script>
