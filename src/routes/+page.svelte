@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import { RevoGrid } from '@revolist/svelte-datagrid';
+	import { defineCustomElements } from '@revolist/revogrid/loader';
+
+	defineCustomElements();
+
+	let columns = [
+		{ prop: '1', name: 'Title 1' },
+		{ prop: '2', name: 'Title 2' }
+	];
+	let source = [{ 1: 'Hello', 2: 'World' }];
+</script>
+
+Testing
+<RevoGrid {source} resize="true" {columns} theme="material" />
