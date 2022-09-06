@@ -12,4 +12,4 @@
 </script>
 
 Testing
-<RevoGrid {source} resize="true" {columns} theme="material" />
+<RevoGrid {source} {columns} theme="material" />
