@@ -31,6 +31,7 @@
 	"type": "module",
 	"dependencies": {
 		"@revolist/revogrid": "^3.2.17",
+		"@revolist/revogrid-column-date": "^2.0.0",
 		"@revolist/revogrid-column-numeral": "^1.0.2",
 		"@revolist/revogrid-column-select": "^2.0.2",
 		"@revolist/svelte-datagrid": "^3.2.15"
